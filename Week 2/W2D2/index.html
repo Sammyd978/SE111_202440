@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--In document styling; loads in head styles apply as the content loads-->
+    <!--handle many selections of element styles as opposed to one at a time-->
+    <style>
+        /*in here we write CSS*/ 
+
+        /*SELECTION in CSS & JS: select specific elements on a page
+
+            *by ELEMENT type          ex: body, div, p
+            *by 10 attribute
+        */
+        
+        div { 
+            border:1px solid black;
+            padding:10px; /*adds space between content and border*/
+            margin:10px; /* adds space between an elements border and other elements*/
+
+            background-color: azure;
+        }
+
+        #wrapper {
+            background-color: black;
+            
+        }
+
+        #nav, #footer {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body> style
+    <!--all page content goes in the body-->
+    <!--WRAPPER; the wrapper litteraly "wraps" around all content on the page-->
+    <div id="wrapper">
+
+        <h1 style="color:azure">Samuel Morales - <i>Sammy or Sam :]</i></h1>
+        <!--NAVIGATION-------------------->
+        <div id="--NAV--">
+            <!-- ID names can only be used 1x per page-->
+             
+            <!--Linking to OUTSIDE pages (not part of a website) you need the FULL path protocol through file extension (If not index.html)-->
+            <a href="https://www.meca.edu" target="blank">Visit MECA</a><br>
+            <!--Linking to INTERNAL pages (part of site) you just use the RELATIVE path-->
+            <a href="page2.html#footer">Page 2</a><br><br>
+
+            <!--IN-PAGE links: linking to sections within the actual page itself-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a><br><br>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--NAV-->
+ 
+        <!--BIO SELECTION----------------->
+        <div id="--BIO--">
+        
+            <h2>About Me </h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+            
+            <br>
+
+            <!--RELATIVE img example-->
+            <img src="images/stormsEnd.jpg" alt=" a light illustration of a Storm's End castle in spriing time">
+
+        </div><!--BIO-->
+
+        <!--SCHOOL SELECTION-------------->
+
+        <div id="--Schools--">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="A picture of the Porteous Building, main campus for MECA in Portland, ME"  width="500">
+
+        </div><!--SCHOOLS-->
+
+        <!--MY HOOBIES-------------------->
+        <div id="Hobbies">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+            </ul>
+
+        </div><!--MY HOBBIES-->
+        <div id="Footer">
+
+            <a href="#wrapper">Back to Top!</a><br>
+            <p>&copy; 2024 | S Morales | SE111 [202440</p><br>
+
+            <!--VALIDATION IMAGE SCREENSHOT BELOW-->
+
+            <img src="" alt="validation screenshot for THIS page"
+            style="width: 500;">
+
+        </div><!--MY FOOTER-->
+
+
+    </div>
+
+</body>
+</html>
