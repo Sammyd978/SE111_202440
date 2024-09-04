@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Morales">
+    <meta name="description" content="Javascript Pay Calculator ">
+    <title>Pay Calculator</title>
+</head>
+<body>
+
+<script>
+    // User Inputs their the amount of money they make in a hour and the amount of hours worked.
+    let hourlyPay = Number(prompt("Please enter your hourly pay:"));
+    let hoursWorked = Number(prompt("Enter the total amount of hours worked during the two week period:"));
+
+    // Calulating the gross pay
+    let grossPay = hourlyPay * hoursWorked;
+
+    // Calculating Uncle Sam's share
+    let taxRate = 0.20;
+    let taxAmount = grossPay * taxRate;
+
+    // Calculating the net pay
+    let netPay = grossPay - taxAmount;
+
+    // Displaying these results within the console
+    console.log("Gross pay: $" + grossPay.toFixed(2));
+    console.log("Uncle Sam's share: $" + taxAmount.toFixed(2));
+    console.log("Net Pay: $" + netPay.toFixed(2));
+
+    // Displaying these results with a alert, \n creates the new line
+    alert(
+        "Gross pay: $" + grossPay.toFixed(2) + "\n" +
+        "Uncle Sam's share: $" + taxAmount.toFixed(2) + "\n" +
+        "Net pay: $" + netPay.toFixed(2)
+    );
+</script>
+
+</body>
+</html>
