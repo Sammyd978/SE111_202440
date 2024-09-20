@@ -8,12 +8,14 @@
 
     <style>
 
-        .red {
+        .border {
         
             border:1px solid rgb(70, 9, 223);
             
             margin-bottom:10px;
             
+            padding: 10x;
+
             min-height:20px;
         
          }
@@ -37,7 +39,7 @@
 		    {first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		    {first:"Marion", last:"Cobretti", credit:"Cobra" }
 
-        ]
+        ];
 
             console.log(people[0])
             console.dir(people[0])
@@ -60,7 +62,7 @@
                 //add an id and class attribute to the new div element
                 //.setAttribute() adds attributes to elements; provide with attribute type and attribute value
                 tempDiv.setAttribute(`id`, String(i));
-                tempDiv.setAttribute('class' , 'border');
+                tempDiv.setAttribute('class', 'border');
 
                 //for every property of the object --> for key in object loop
                 for(let key in people[i])//for each key (property) in the current object.
